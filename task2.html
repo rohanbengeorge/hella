@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	table, td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+	}
+		.formInput {
+		width: 50%;
+		border: 1px solid red;
+		margin: auto;
+	}
+	div {
+		width: 100%;
+		margin: 5px 10px;
+	}
+	input {
+		width: 93%;
+	}
+	input[type="submit"] {
+		width: 50%;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+</style>
+</head>
+
+<body>
+<div class="formInput">
+<form >
+	  <div>Name:</div><div>
+	  <input type="text" id="name" name="firstname"  >
+	  </div>
+	  <div>Email:</div><div>
+	  <input type="email" id="email" name="Email" > </div>
+	  <div>DOB:</div><div>
+	  <input type="date" id="dob" name="DOB" > </div>
+	  <div>Age:</div><div>
+	  <input type="text" id="age" name="Age" > </div>
+	  <div>Address:</div><div>
+	  <input type="text" id="address" name="Address" > </div>
+
+	  
+</form> 
+</div>
+<button onclick="verify()">ADD</button>
+
+<table id="Table">
+	<thead>	
+	  <tr>
+	    <th>Name</th>
+	    <th>Email</th>
+	    <th>DOB</th>
+	    <th>Age</th>
+	    <th>Address</th>
+	  </tr>
+  	</thead>
+  	<tbody id="tablebody">
+  		
+  	</tbody>
+</table>
+<br>
+
+<button type="button" onclick="prev()">Prev</button>
+<button type="button" onclick="next()">Next</button>
+
+
+<script src="script2.js"></script>
+</body>
+
+</html>

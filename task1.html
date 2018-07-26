@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+	.formInput {
+		width: 50%;
+		border: 1px solid red;
+		margin: auto;
+	}
+	div {
+		width: 100%;
+		margin: 5px 10px;
+	}
+	input {
+		width: 93%;
+	}
+	input[type="submit"] {
+		width: 50%;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+</style>
+
+</head>
+
+<body>
+<div class="formInput">
+<form >
+	  <div>Name:</div><div>
+	  <input type="text" id="name" name="firstname"  >
+	  </div>
+	  <div>Email:</div><div>
+	  <input type="email" id="email" name="Email" > </div>
+	  <div>DOB:</div><div>
+	  <input type="date" id="dob" name="DOB" > </div>
+	  <div>Age:</div><div>
+	  <input type="text" id="age" name="Age" > </div>
+	  <div>Address:</div><div>
+	  <input type="text" id="address" name="Address" > </div>
+
+	  <br><br>
+	  <input type="submit" value="Submit" onclick="alertFunction()">
+
+
+</form> 
+</div>
+<p id="show"></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>

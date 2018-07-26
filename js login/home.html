@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style >
+		.marg
+		{
+			margin: 20px;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3" id="col1" style="background-color:grey;border-right: solid 1px;height: 600px">
+			<div><button type="button" onclick="displayForm()" class="btn btn-light marg">Form</button></div>
+			<div><button type="button" onclick="displayTable()" class="btn btn-secondary marg">List</button></div>	
+
+		</div>
+
+		<div class="col-sm-6" id="col2" style="background-color:white; height: 600px;width: 100%	">
+			<form  class="form signup_body marg">
+			 		
+				<div>Name:</div><div class="form-group ">
+				<input type="text" id="name" class="form-control" name="name"  >
+				</div>
+				<div>Email:</div><div class="form-group ">
+				<input type="email" id="email" class="form-control" name="email" > </div>
+				<div>DOB:</div><div class="form-group ">
+				<input type="date" id="dob" class="form-control" name="DOB" > </div>
+				<div>Age:</div><div class="form-group ">
+				<input type="text" id="age" class="form-control" name="Age" > </div>
+				<div>Address:</div><div class="form-group ">
+				<input type="text" id="address" class="form-control" name="Address" > </div>
+				<button type="button" onclick="addFormDetails()" class="btn btn-primary marg">Sign Up</button>
+
+
+		 	</form>
+		 	<section id="list">
+		 	<table id="Table">
+				<thead>	
+				  <tr>
+				    <th id="id22" >Name</th>
+				    <th>Email</th>
+				    <th onclick="sorts_dob()" >DOB</th>
+				    <th onclick="sorts_age()">Age</th>
+				    <th>Address</th>
+				    <th>Delete</th>
+				  </tr>
+			  	</thead>
+			  	<tbody id="tablebody">
+			  		
+			  	</tbody>
+			  	
+			</table>
+			<button type="button" class="btn btn-link" onclick="prev1()">Prev</button>
+				<button type="button" class="btn btn-link" onclick="next1()">Next</button>
+
+			</section>
+
+		</div>
+	</div>	
+	</div>
+	
+<script src="scripth.js"></script>
+</body>
+
+</html>	
